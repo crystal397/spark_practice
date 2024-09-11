@@ -15,3 +15,19 @@ $ java --version # 자바 버전 확인
 ### 2-1. PyCharm 설치
 
 ### 2-2. `pip install pyspark`
+
+
+## "현재 브랜치와 'origin/main'이(가) 갈라졌습니다," 오류 해결방법
+### 오류 내용
+
+```현재 브랜치 main
+현재 브랜치와 'origin/main'이(가) 갈라졌습니다,
+다른 커밋이 각각 1개와 1개 있습니다.
+
+커밋할 사항 없음, 작업 폴더 깨끗함
+```
+
+### 해결책
+
+```git fetch origin main``` 
+```git merge FETCH_HEAD```
