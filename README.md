@@ -31,6 +31,7 @@ $ java --version # 자바 버전 확인
 ```git merge FETCH_HEAD```
 
 <br/>
+
 ### 2) rdd, sparksql version에서 "java, hadoop" 관련 오류
 #### 오류 내용
 
