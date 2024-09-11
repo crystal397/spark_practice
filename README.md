@@ -28,6 +28,9 @@ $ java --version # 자바 버전 확인
 ```
 #### 해결책
 ```git fetch origin main``` 
+
+<br/>
+
 ```git merge FETCH_HEAD```
 
 <br/>
