@@ -34,11 +34,12 @@ $ java --version # 자바 버전 확인
 ## 2) rdd, sparksql version에서 "java, hadoop" 관련 오류
 ### 오류 내용
 
-```: java.net.ConnectException: Call From local/127.0.0.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+```
+: java.net.ConnectException: Call From local/127.0.0.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
 ```
 
 ### 해결책
 
 ```# load data
-    text_file: RDD[str] = sc.textFile("***file:///***{파일의 절대경로}/words.txt")
+    text_file: RDD[str] = sc.textFile("file:///{파일의 절대경로}/words.txt")
 ``` 
