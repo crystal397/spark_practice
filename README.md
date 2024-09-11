@@ -29,8 +29,8 @@ $ java --version # 자바 버전 확인
 #### 해결책
 ```git fetch origin main``` 
 ```git merge FETCH_HEAD```
-<br/>
 
+<br/>
 ### 2) rdd, sparksql version에서 "java, hadoop" 관련 오류
 #### 오류 내용
 
@@ -41,5 +41,5 @@ $ java --version # 자바 버전 확인
 #### 해결책
 
 ```# load data
-    text_file: RDD[str] = sc.textFile("file:///{파일의 절대경로}/words.txt")
+text_file: RDD[str] = sc.textFile("file:///{파일의 절대경로}/words.txt")
 ``` 
