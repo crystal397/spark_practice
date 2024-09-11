@@ -18,27 +18,27 @@ $ java --version # 자바 버전 확인
 <br/>
 
 ## 오류 해결방법 Collection
-## 1) "현재 브랜치와 'origin/main'이(가) 갈라졌습니다," 오류
-### 오류 내용
+### 1) "현재 브랜치와 'origin/main'이(가) 갈라졌습니다," 오류
+#### 오류 내용
 ```현재 브랜치 main
 현재 브랜치와 'origin/main'이(가) 갈라졌습니다,
 다른 커밋이 각각 1개와 1개 있습니다.
 
 커밋할 사항 없음, 작업 폴더 깨끗함
 ```
-### 해결책
+#### 해결책
 ```git fetch origin main``` 
 ```git merge FETCH_HEAD```
 <br/>
 
-## 2) rdd, sparksql version에서 "java, hadoop" 관련 오류
-### 오류 내용
+### 2) rdd, sparksql version에서 "java, hadoop" 관련 오류
+#### 오류 내용
 
 ```
 : java.net.ConnectException: Call From local/127.0.0.1 to localhost:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
 ```
 
-### 해결책
+#### 해결책
 
 ```# load data
     text_file: RDD[str] = sc.textFile("file:///{파일의 절대경로}/words.txt")
