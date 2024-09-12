@@ -17,6 +17,10 @@ $ java --version # 자바 버전 확인
 ### 2-2. `pip install pyspark`
 <br/>
 
+<img width="1090" alt="스크린샷 2024-09-12 오후 12 05 53" src="https://github.com/user-attachments/assets/d47d3fc1-d100-499a-ab10-b910e364cb97">
+<출처: https://devhints.io/datetime>
+<br/>
+
 ## 오류 해결방법 Collection
 ### 1) "현재 브랜치와 'origin/main'이(가) 갈라졌습니다," 오류
 #### 오류 내용
@@ -46,6 +50,4 @@ $ java --version # 자바 버전 확인
 text_file: RDD[str] = sc.textFile("file:///{파일의 절대경로}/words.txt")
 ``` 
 
-<br/>
-<img width="1090" alt="스크린샷 2024-09-12 오후 12 05 53" src="https://github.com/user-attachments/assets/d47d3fc1-d100-499a-ab10-b910e364cb97">
-<출처: https://devhints.io/datetime>
+
